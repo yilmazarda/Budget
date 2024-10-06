@@ -1,0 +1,35 @@
+@model List<Budget.Models.Category>
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Categories";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<a href="@Url.Action("Create")" class="navigationButtons" autocomplete="off" data-loading-text="Loading Main Page...">Create Category</a>
+
+<!-- Categories Table -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var category in Model)
+        {
+            <tr>
+                <td>@category.Id</td>
+                <td>@category.Name</td>
+                <td>
+                    <a href="@Url.Action("Edit", new { id = category.Id })" class="btn btn-warning">Edit</a>
+                    <a class="btn btn-danger" href="@Url.Action("Delete", new { id = category.Id})"> 
+                    Delete
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

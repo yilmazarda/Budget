@@ -1,0 +1,18 @@
+@model Budget.Models.Category
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit Category</h1>
+
+<div>
+    <strong>Category:</strong> @Model.Name
+</div>
+<div>
+    <form asp-action="edit" method="post">
+    <label for="Name" class="form-label">New Category Name</label>
+    <input class="form-control" id="Name" name="Name">
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

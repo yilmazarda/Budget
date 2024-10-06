@@ -1,0 +1,16 @@
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create Category</h1>
+
+<div>
+    <form asp-action="create" method="post">
+    <div class="mb-3">
+        <label for="Name" class="form-label">Category Name</label>
+        <input class="form-control" id="Name" name="Name">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

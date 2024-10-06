@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/ardayilmaz/Documents/C# Stuff/Budget/Budget/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/ardayilmaz/Documents/C# Stuff/Budget/Budget/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/ardayilmaz/Documents/C# Stuff/Budget/Budget/wwwroot/favicon_io.zip",
+      "PackagePath": "staticwebassets/favicon_io.zip"
+    },
+    {
+      "Id": "/Users/ardayilmaz/Documents/C# Stuff/Budget/Budget/wwwroot/favicon_io/about.txt",
+      "PackagePath": "staticwebassets/favicon_io/about.txt"
+    },
+    {
+      "Id": "/Users/ardayilmaz/Documents/C# Stuff/Budget/Budget/wwwroot/favicon_io/android-chrome-192x192.png",
+      "PackagePath": "staticwebassets/favicon_io/android-chrome-192x192.png"
+    },
+    {
+      "Id": "/Users/ardayilmaz/Documents/C# Stuff/Budget/Budget/wwwroot/favicon_io/android-chrome-512x512.png",
+      "PackagePath": "staticwebassets/favicon_io/android-chrome-512x512.png"
+    },
+    {
+      "Id": "/Users/ardayilmaz/Documents/C# Stuff/Budget/Budget/wwwroot/favicon_io/apple-touch-icon.png",
+      "PackagePath": "staticwebassets/favicon_io/apple-touch-icon.png"
+    },
+    {
+      "Id": "/Users/ardayilmaz/Documents/C# Stuff/Budget/Budget/wwwroot/favicon_io/favicon-16x16.png",
+      "PackagePath": "staticwebassets/favicon_io/favicon-16x16.png"
+    },
+    {
+      "Id": "/Users/ardayilmaz/Documents/C# Stuff/Budget/Budget/wwwroot/favicon_io/favicon-32x32.png",
+      "PackagePath": "staticwebassets/favicon_io/favicon-32x32.png"
+    },
+    {
+      "Id": "/Users/ardayilmaz/Documents/C# Stuff/Budget/Budget/wwwroot/favicon_io/site.webmanifest",
+      "PackagePath": "staticwebassets/favicon_io/site.webmanifest"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.Budget.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.Budget.props",
+      "PackagePath": "build\\Budget.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Budget.props",
+      "PackagePath": "buildMultiTargeting\\Budget.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Budget.props",
+      "PackagePath": "buildTransitive\\Budget.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

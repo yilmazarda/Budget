@@ -1,0 +1,31 @@
+@model Budget.Models.CategoryTransactionModel
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit Transaction</h1>
+
+<div>
+    <strong>Transaction:</strong> @Model.Transaction.Name
+</div>
+<div>
+    <form asp-action="edit" method="post">
+    <div class="mb-3">
+        <label for="Name" class="form-label">Transaction Name</label>
+        <input class="form-control" id="Name" name="Name">
+        <label for="Date" class="form-label">Date</label>
+        <input class="form-control" id="Date" name="Date" type="date">
+        <label for="Value" class="form-label">Transaction Value</label>
+        <input class="form-control" type="number" id="Value" name="Value">
+        <select class="form-select" id="CategoryId" name="CategoryId">
+            <option selected>Choose Category</option>
+            @foreach (var category in Model.Categories)
+            {
+                <option value=@category.Id>@category.Name</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

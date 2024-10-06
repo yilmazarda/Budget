@@ -1,0 +1,23 @@
+body {
+  background-color: #f8f9fa; /* Light background */
+  color: #343a40; /* Dark text color */
+  font-family: Arial, sans-serif; /* Font style */
+}
+h1 {
+  color: #343a40; /* Bootstrap primary color */
+  font-family: Arial;
+}
+.page-wrapper {
+  width: 1600px;
+  margin:0px auto;
+  margin-top: 20px;
+}
+.form-control {
+  width: 30%;
+  margin-bottom: 10px;
+}
+select.form-select {
+  width:265px;
+  min-height: 45px;
+  margin: 10px 10px 10px 0px;
+}

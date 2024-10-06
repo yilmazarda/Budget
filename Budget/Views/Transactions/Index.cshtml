@@ -1,0 +1,39 @@
+@model List<Budget.Models.Transaction>
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Index";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+
+<a href="@Url.Action("Create")" class="navigationButtons" autocomplete="off" data-loading-text="Loading Main Page...">Create Transaction</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Value</th>
+            <th>Category</th>
+            <th>Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var transaction in Model)
+        {
+            <tr>
+                <td>@transaction.Id</td>
+                <td>@transaction.Name</td>
+                <td>@transaction.Value</td>
+                <td>@transaction.Category.Name</td>
+                <td>@transaction.Date.ToShortDateString()</td>
+                <td>
+                    <a href="@Url.Action("Edit", new { id = transaction.Id })" class="btn btn-warning">Edit</a>
+                    <a href="@Url.Action("Delete", new { id = transaction.Id })" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

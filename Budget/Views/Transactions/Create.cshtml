@@ -1,0 +1,28 @@
+@model List<Budget.Models.Category>
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create Transaction</h1>
+
+<div class="mb-3">
+    <form asp-action="create" method="post">
+    <div class="mb-3">
+        <label for="Name" class="form-label">Transaction Name</label>
+        <input class="form-control" id="Name" name="Name">
+        <label for="Date" class="form-label">Date</label>
+        <input class="form-control" id="Date" name="Date" type="date">
+        <label for="Value" class="form-label">Transaction Value</label>
+        <input class="form-control" type="number" id="Value" name="Value">
+        <select class="form-select" id="CategoryId" name="CategoryId">
+            <option selected>Choose Category</option>
+            @foreach (var category in Model)
+            {
+                <option value=@category.Id>@category.Name</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
